@@ -1,0 +1,164 @@
+.header{
+    display:flex;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+.header .logo{
+    width: 4rem;
+    margin-left: 2rem;
+  }
+  .header .desktop .insta{
+    position: absolute;
+    width:1rem;
+    margin-left: 1rem;
+  }
+.header .desktop ul{
+    list-style: none;
+  }
+  .header .desktop ul li{
+    display:inline-flex;
+    padding-right:4rem;
+  }
+  .header .desktop{
+    margin-left: 48rem;
+  }
+  .mobile{
+    display: none;
+  }
+  @media only screen and (max-width:760px){
+    .header .desktop{
+        display:none;
+    }
+    .header .mobile {
+        display:flex;
+        padding-left: 6rem;
+    
+    }
+    .header .mobile ul li {
+         list-style: none;
+         padding-left: 1rem;
+         display: inline-flex;
+    }
+    .header .mobile img{
+        width:1rem;
+    }
+  }
+  @media only screen and (max-width:400px){
+    .header .desktop{
+        display:none;
+    }
+    .header .mobile {
+        display:flex;
+        padding-left: 6rem;
+    
+    }
+    .header .mobile ul li {
+         list-style: none;
+         padding-left: 1rem;
+         display: inline-flex;
+    }
+    .header .mobile img{
+        width:1rem;
+    }
+  }
+  .main{
+    background-image: url('./bg5.jpg');
+    height: 30rem;
+    background-size: contain;
+    background-position: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .main h1{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 11rem;
+    font-size: 6rem;
+  }
+  @media only screen and (max-width:760px){
+    .main{
+      width:100%;
+    }
+    .main h1{
+      margin-top: 10rem;
+      font-size: 5rem;
+    }
+  }
+  @media only screen and (max-width:400px){
+    .main{
+      width:100%;
+    }
+    .main h1{
+      margin-top: 10rem;
+    }
+  }
+.books{
+  display: flex;
+  padding-left: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+.book div{
+  background-color: bisque;
+  padding:1rem;
+}
+.books img{
+  width:15rem;
+  height:15rem;
+  /*margin-left: 2rem;*/
+ 
+}
+@media only screen and (max-width:760px){
+  .books{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:1024px){
+  .books{
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width:400px){
+  .books{
+    flex-direction: column;
+    margin-left: 1px;
+  }
+}
+.mission{
+  border: 3px solid black;
+  height:5rem;
+  width: 100%;
+  margin-top: 0;
+}
+.mission h3{
+  text-align: center;
+  padding-top: 1rem;
+}
+.about{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.about img{
+  width: 20rem;
+  height: 20rem;
+}
+@media only screen and (max-width:760px){
+  .about{
+    flex-direction: column;
+  }
+  .about img{
+    width: 15rem;
+    height:15rem;
+  }
+}
+@media only screen and (max-width:400px){
+  .about{
+    flex-direction: column;
+  }
+  .about img{
+    width: 15rem;
+    height:15rem;
+  }
+}
